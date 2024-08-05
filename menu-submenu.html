@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header id="header">
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul id="main-menu">
+                <li class="menu-item" style="background-color: #be0f0f; font-weight: 800;">
+                    <a href="index.html" class="menu-link"><i class="fas fa-home"></i>Acasa</a>
+                </li>
+                <li class="menu-item" style="background-color: #be0f0f; font-weight: 800;" >
+                    <a href="pages/about.html" class="menu-link"><i class="fas fa-user"></i>Despre mine</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#skills" class="menu-link"><i class="fas fa-cogs"></i>Skills </a>
+    
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#soft-skills" class="menu-link">Soft Skills</a></li>
+                        <li class="submenu-item"><a href="#hard-skills" class="menu-link">Hard Skills</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#projects" class="menu-link"><i class="fas fa-tasks"></i>Proiecte</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#projects" class="menu-link">Simple</a></li>
+                        <li class="submenu-item"><a href="#projects" class="menu-link">Complicate</a></li>
+                        <li class="submenu-item"><a href="#projects" class="menu-link">HTML/CSS</a></li>
+                        <li class="submenu-item"><a href="#projects" class="menu-link">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#contacts" class="menu-link"><i class="fas fa-phone-volume"></i>Contacte</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Explorarea IT este un challenge nou pentru mine, fiindca pana acum nu am avut tangente cu acest domeniu, insa curiozitatea de a cunoaste ce se afla in spatele site-urilor si de ce functioneaza intr-un fel anume m-au facut sa aplic la curs.</p>
+            <h3 id="hard-skills">Here is a list of my hard skills</h3>
+            <ul>
+                <li>Word</li>
+                <li>Excel</li>
+                <li>HTML basic</li>
+            </ul>
+
+            <h3 id="soft-skills">Here is a list of my soft skills</h3>
+            <ul>
+                <li>Asertivitate</li>
+                <li>Lucru in echipa</li>
+                <li>Multitasking</li>
+                <li>Focursare</li>
+                <li>Rezilienta</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>În timpul cursului de Front-End Development de la Orange Systems, am lucrat la mai multe proiecte care mi-au pus în evidență abilitățile și progresul în învățare. Mai jos sunt câteva dintre proiectele pe care le-am realizat:</p>
+            <h3>Here are some of my projects</h3>
+            <table>
+                <tr>
+                    <th>Reteta</th>
+                    <th>Tabla de sah</th>
+                    <th>Actorii preferati</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div id=milkshake ></div>
+                        <a href="https://github.com/Irinuta-prog/Reteta-milkshake"></a> 
+                    </td>
+                    <td>
+                        <a href="https://github.com/Irinuta-prog/Tabla-de-sah"  alt="Imaginea tabla de sah" width="250px" ></a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/Irinuta-prog/Myfavouriteactresses"  alt="Imaginea proiectului Portfolio" width="250px"></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <p>Pentru mai multe informatii, aveti detaliile de mai jos</p>
+            <p>
+                <i class="fas fa-user"></i>Bocancea Irina 067707311
+            </p>
+            <p>
+                <i class="fas fa-map-pin"></i>Chisinau, Moldova
+            </p>
+            <p>
+                <i class="fas fa-envelope"></i>femaleuser777@gmail.com
+            </p>
+
+            <form>
+                <h3>Scrieţi-mi un mesaj:</h3>
+                <input name="name" placeholder="Numele*" required>
+                <input name="tel" type="number" placeholder="Tel:*" required minlength="9">
+                <input name="email" type="email" placeholder="Email*" required><br><br>
+                <lable for="motiv">De ce doriţi să mă contactaţi:</lable><br><br>
+                <select name="motiv">
+                    <option value="">--Selectaţi o opţiune--</option>
+                    <option value="interviu">Interviu</option>
+                    <option value="job offer">Job Offer</option></select><br><br>
+                <textarea name="mesaj" placeholder="Detalii" cols="60"rows="5"></textarea><br><br>
+                <button>Trimite</button>
+              </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/bocancea.irina.1" target="_blank">Instagram</a>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/bocanceairina/" target="_blank">LinkedIn</a>
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <div id="back-to-top-button">
+            <!-- Buton pentru a merge la header -->
+            <a href="#header"><button id="back-to-top">Back to top</button></a>
+        </div>
+    </footer>
+</body>
+</html>
